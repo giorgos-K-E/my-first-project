@@ -73,11 +73,14 @@ void loop() {
   // Detect button press (HIGH → LOW)
   if (lastButtonState == HIGH && buttonState == LOW) {
     // Blink both LEDs once
-    digitalWrite(led1, Low);
-    digitalWrite(led2, Low);
+    digitalWrite(led1, HIGH);
     delay(200);
-    digitalWrite(led1, LOW);
     digitalWrite(led2, LOW);
+    delay(200);
+    digitalWrite(led1, HIGH);
+    delay(200);
+    digitalWrite(led2, LOW);
+    delay(200);
   }
 
   lastButtonState = buttonState;
