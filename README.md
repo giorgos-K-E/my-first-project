@@ -80,7 +80,7 @@ void loop() {
     digitalWrite(led1, HIGH);
     delay(200);
     digitalWrite(led2, LOW);
-    delay(200);
+    delay(2000);
   }
 
   lastButtonState = buttonState;
