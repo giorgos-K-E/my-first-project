@@ -74,7 +74,7 @@ void loop() {
   if (lastButtonState == HIGH && buttonState == LOW) {
     // Blink both LEDs once
     digitalWrite(led1, Low);
-    digitalWrite(led2, HIGH);
+    digitalWrite(led2, Low);
     delay(200);
     digitalWrite(led1, LOW);
     digitalWrite(led2, LOW);
